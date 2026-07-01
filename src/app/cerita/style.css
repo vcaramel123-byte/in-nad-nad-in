@@ -1,0 +1,53 @@
+/* 2. Setup animasi paralaks fade up-down */
+@keyframes editorialFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  20%, 80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+}
+
+/* 1. Daftarkan timeline untuk mendeteksi scroll seluruh halaman */
+.cerita-bg-container {
+  view-timeline-name: --page-scroll;
+  view-timeline-axis: y;
+}
+
+/* 2. Buat keyframes perubahan warna dari Scroll 1 sampai Scroll 5 */
+@keyframes ubahWarnaBg {
+  0%{
+    background-color: #000000; /* Warna krem awal (Scroll 1 & 2) */
+    color: #ffffff;            /* Teks gelap */
+  }
+  10%,20%{
+    background-color: rgb(255, 249, 249);
+    color: #101010;
+  }
+  40%, 60% {
+    background-color: #1a1a1a; /* Berubah jadi Hitam/Gelap (Scroll 3) */
+    color: #fbf9f6;            /* Teks otomatis jadi terang */
+  }
+  80%, 90% {
+    background-color: #7c2d12; /* Berubah jadi Amber/Cokelat Gelap (Scroll 4 & 5) */
+    color: #ffffff;            /* Teks tetap terang */
+  }
+  100%{
+    background-color: blueviolet;
+    color: #ffffff;   
+  }
+}
+
+/* 3. Terapkan animasi bg ke kontainer utama */
+.bg-animasi-scroll {
+  animation: ubahWarnaBg linear both;
+  animation-timeline: --page-scroll;
+  animation-range: contain 0% contain 100%;
+}
+
