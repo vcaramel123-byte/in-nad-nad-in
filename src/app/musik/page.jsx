@@ -68,7 +68,7 @@ function page() {
       {/* Video Kanan */}
       <div className="w-full md:w-1/2 max-w-sm h-[530px] border-4 border-black p-2 bg-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] duration-200">
         <h3 className="text-xl font-fredoka md:text-2xl font-black text-center tracking-wide uppercase mb-4 text-black">Musik Create By: I & N</h3>
-        <div className="overflow-hidden h-[420px] w-[350px] p-2 rounded-sm aspect-video border-2 border-black bg-gray-100 flex items-center justify-center">
+        <div className="overflow-hidden md:h-[420px] h-[350] w-[250] md:w-[350px] p-2 rounded-sm aspect-video border-2 border-black bg-gray-100 flex items-center justify-center">
           <video className="max-h-full min-w-full object-cover" src="/video/musik.mp4" controls={true}></video>
         </div>
       </div>
@@ -95,7 +95,7 @@ function page() {
       {/* Lirik Kiri */}
       <div className="w-full md:w-1/2 max-w-sm h-[530px] border-4 border-black p-2 bg-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] duration-200">
         <h3 className="text-xl md:text-2xl font-black text-center tracking-wide uppercase mb-4 text-black">Lirik Lagu</h3>
-        <div className="overflow-hidden h-[450px] w-[350px] rounded-sm aspect-video border-2 border-black bg-gray-100 flex items-center justify-center">
+        <div className="overflow-hidden md:h-[420px] h-[350] w-[250] md:w-[350px] rounded-sm aspect-video border-2 border-black bg-gray-100 flex items-center justify-center">
           <img src="/aset/7.svg" alt="lirik" className="max-h-full min-w-full object-cover" />
         </div>
       </div>
