@@ -1,0 +1,6 @@
+.musik{
+    background: url(../../../public/aset/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -23,6 +23,7 @@ const Navbar = () => {
           <li><a href="/beranda" className="hover:text-blue-500 transition-colors">Beranda</a></li>
           <li><a href="/kenangan" className="hover:text-blue-500 transition-colors">Kenangan</a></li>
           <li><a href="/cerita" className="hover:text-blue-500 transition-colors">Cerita</a></li>
+          <li><a href="/musik" className="hover:text-blue-500 transition-colors">Musik</a></li>
         </ul>
 
         {/* Tombol Hamburger: Hanya muncul di mobile (md:hidden) */}
@@ -61,6 +62,7 @@ const Navbar = () => {
             <li><a href="/beranda" className="block py-1 hover:text-blue-500" onClick={() => setOpen(false)}>Beranda</a></li>
             <li><a href="/kenangan" className="block py-1 hover:text-blue-500" onClick={() => setOpen(false)}>Kenangan</a></li>
             <li><a href="/cerita" className="block py-1 hover:text-blue-500" onClick={() => setOpen(false)}>Cerita</a></li>
+            <li><a href="/musik" className="block py-1 hover:text-blue-500" onClick={() => setOpen(false)}>Musik</a></li>
           </ul>
         </div>
       </div>
